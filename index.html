@@ -1,268 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="description" content="visual assistance" />
-    <meta name="keywords" content="web design, html, css, js" />
-    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="public/favicon_io/site.webmanifest">
-    <title>SpeX Website</title>
-  </head>
-  <body>
-    <header class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="header__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
-          <li class="header__line"></li>
-          <li>
-            <button
-              aria-label="theme-toggle btn"
-              id="theme-toggle"
-              class="header__sun"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
-                />
-              </svg>
-            </button>
-          </li>
-          <li>
-            <a class="header__resume btn" href="#">View Demo</a>
-          </li>
-        </ul>
-        <button aria-label="mobile nav button" class="header__bars">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a class="mobile-nav__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#contact">Contact</a>
-          </li>
-          <li class="mobile-nav__link-line"></li>
-          <li>
-            <button
-              aria-label="theme-toggle btn"
-              id="theme-toggle"
-              class="mobile-nav__sun"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
-                />
-              </svg>
-            </button>
-          </li>
-          <li>
-            <a class="mobile-nav__btn btn" href="#">View Demo</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- End of Mobile Navigation -->
-    <main>
-      <section class="hero container">
-       
-        <h1 class="hero__title">
-          Welcome To <br />
-          SpeX.
-        </h1>
-        <p class="hero__description">
-          Revolutionizing visual assistance with
-          <strong>smart glasses</strong> that empower independence and
-          confidence. Experience features like
-          <strong>object recognition</strong> , <strong>text reading,</strong>
-          and seamless navigation. Discover the future of accessibility with
-          speX!
-        </p>
-        <a class="hero__btn btn" href="#">Reach out</a>
-      </section>
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About Us</h2>
-          <p class="about__description">
-            <strong>SpeX</strong> is an innovative pair of smart glasses
-            designed to assist individuals with visual impairments. By
-            leveraging <strong>advanced AI and sensor technology</strong>, speX
-            offers real-time features such as object recognition, text reading,
-            and face identification, enabling users to navigate their
-            surroundings with ease. Its
-            <strong>sleek and lightweight design</strong> ensures comfort
-            throughout the day while providing users with a seamless experience.
-          </p>
-          <p class="about__description">
-            Whether it's reading signs, identifying obstacles, or recognizing
-            familiar faces, <strong>speX</strong> is built to provide immediate,
-            accurate, and user-friendly support. The glasses are lightweight,
-            stylish, and designed to provide all-day comfort without
-            compromising on performance.
-          </p>
-          <p class="about__description">
-            Here is the link to try and test out our protope.
-            <a>Slaying The Dragon</a> Soon going to release version 2 and 3 with
-            Twillo linking to stakeholders.
-          </p>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle">Technologies/Tools</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">OCR</li>
-              <li class="about__list">VOSK</li>
-              <li class="about__list">PyAudio</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">YOLO</li>
-              <li class="about__list">OpenCV</li>
-              <li class="about__list">Microcontroller</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about__img-wrapper">
-          <img
-            class="about__img lazy loading"
-            src="https://via.placeholder.com/720"
-            data-src="/speximgabout.jpg"
-            alt="Profile picture"
-          />
-        </div>
-      </section>
-      <section id="featured" class="featured container section">
-        <h3 class="featured__subtitle">Featured project</h3>
-        <div class="featured__wrapper">
-          <h2 class="featured__title">SpeX</h2>
-          <a
-            aria-label="link featured projects"
-            class="featured__link"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="visual assistance" />
+  <meta name="keywords" content="web design, html, css, js" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="public/favicon_io/site.webmanifest">
+  <title>SpeX Website</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-              />
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
             </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="#">View Demo</a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="#">View Demo</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation -->
+  <main>
+    <section class="hero container">
+
+      <h1 class="hero__title">
+        Welcome To <br />
+        SpeX.
+      </h1>
+      <p class="hero__description">
+        Revolutionizing visual assistance with
+        <strong>smart glasses</strong> that empower independence and
+        confidence. Experience features like
+        <strong>object recognition</strong> , <strong>text reading,</strong>
+        and seamless navigation. Discover the future of accessibility with
+        speX!
+      </p>
+      <a class="hero__btn btn" href="#">Reach out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About Us</h2>
+        <p class="about__description">
+          <strong>SpeX</strong> is an innovative pair of smart glasses
+          designed to assist individuals with visual impairments. By
+          leveraging <strong>advanced AI and sensor technology</strong>, speX
+          offers real-time features such as object recognition, text reading,
+          and face identification, enabling users to navigate their
+          surroundings with ease. Its
+          <strong>sleek and lightweight design</strong> ensures comfort
+          throughout the day while providing users with a seamless experience.
+        </p>
+        <p class="about__description">
+          Whether it's reading signs, identifying obstacles, or recognizing
+          familiar faces, <strong>speX</strong> is built to provide immediate,
+          accurate, and user-friendly support. The glasses are lightweight,
+          stylish, and designed to provide all-day comfort without
+          compromising on performance.
+        </p>
+        <p class="about__description">
+          Here is the link to try and test out our protope.
+          <a href="https://github.com/Amogh-Hegde/speX.git">speX</a> Soon going to release version 2 and 3 with
+          Twillo linking to stakeholders.
+        </p>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">Technologies/Tools</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">OCR</li>
+            <li class="about__list">VOSK</li>
+            <li class="about__list">PyAudio</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">YOLO</li>
+            <li class="about__list">OpenCV</li>
+            <li class="about__list">Microcontroller</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://via.placeholder.com/720" data-src="/speximgabout.jpg"
+          alt="Profile picture" />
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">SpeX</h2>
+        <a aria-label="link featured projects" class="featured__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">
+        Cillum voluptate tempor cillum culpa cupidatat labore voluptate
+        ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
+        pariatur consectetur ullamco. Officia quis id velit duis cupidatat
+        sunt deserunt do aliquip nulla laboris.
+      </p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Hardware</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">Microcontroller</li>
+            <li class="featured__info">Camera</li>
+            <li class="featured__info">Microphone</li>
+            <li class="featured__info">Bluetooth Earphones</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">software</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">PyAudio</li>
+            <li class="featured__info">Voice Assistant-Manju</li>
+            <li class="featured__info">VOSK</li>
+            <li class="featured__info">OpenCV</li>
+            <li class="featured__info">OCR</li>
+          </ul>
+        </div>
+      </div>
+      <header>
+        <h2 class="featured__title mainthing">Demo Product</h2>
+        <div class="wrapper">
+          <spline-viewer class="splinething"
+            url="https://prod.spline.design/5P00iRWoG5HuRVno/scene.splinecode"></spline-viewer>
+        </div>
+
+        <h2 class="featured__title mainthing">Listen News</h2>
+        <div class="wrapper">
+
+          <a href="src/utils/news.html" class="btn">
+            Open News
           </a>
         </div>
-        <p class="featured__description">
-          Cillum voluptate tempor cillum culpa cupidatat labore voluptate
-          ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
-          pariatur consectetur ullamco. Officia quis id velit duis cupidatat
-          sunt deserunt do aliquip nulla laboris.
-        </p>
-        <div class="featured__info-container">
-          <div>
-            <h3 class="featured__label">Hardware</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">Microcontroller</li>
-              <li class="featured__info">Camera</li>
-              <li class="featured__info">Microphone</li>
-              <li class="featured__info">Bluetooth Earphones</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="featured__label">software</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">PyAudio</li>
-              <li class="featured__info">Voice Assistant-Manju</li>
-              <li class="featured__info">VOSK</li>
-              <li class="featured__info">OpenCV</li>
-              <li class="featured__info">OCR</li>
-            </ul>
-          </div>
-        </div>
-        <header>
-          <h2 class="featured__title mainthing">Demo Product</h2>
-                  <div class="wrapper">
-                  <spline-viewer class="splinething" url="https://prod.spline.design/5P00iRWoG5HuRVno/scene.splinecode"></spline-viewer>
-                </div>
 
-                <h2 class="featured__title mainthing">Listen News</h2>
-                <div class="wrapper">
-                  
-                <a href="src/utils/news.html" class="btn">
-                  Open News
-                </a>
-              </div>
-                
-      
-      <section id="contact" class="contact container section">
-        <h2 class="contact__title">Get In Contact</h2>
-        <p class="contact__description">
-          We value your feedback and inquiries! If you have any questions,
-          suggestions, or would like to collaborate, please don’t hesitate to
-          reach out to us. Our team is dedicated to providing support and
-          ensuring your experience with speX is exceptional. Connect with us via
-          email or social media, and let’s work together to make the world a
-          more accessible place.
-        </p>
-        <a
-          class="contact__btn btn"
-          href="mailto:harshendra16@gmail.com"
-          target="_blank"
-          >React Out</a
-        >
-      </section>
-    </main>
 
-    
-    <footer class="footer container section">
-      <h3 class="footer__title">~ Team SpeX ~</h3>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"
-    ></script>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+        <section id="contact" class="contact container section">
+          <h2 class="contact__title">Get In Contact</h2>
+          <p class="contact__description">
+            We value your feedback and inquiries! If you have any questions,
+            suggestions, or would like to collaborate, please don’t hesitate to
+            reach out to us. Our team is dedicated to providing support and
+            ensuring your experience with speX is exceptional. Connect with us via
+            email or social media, and let’s work together to make the world a
+            more accessible place.
+          </p>
+          <a class="contact__btn btn" href="mailto:harshendra16@gmail.com" target="_blank">React Out</a>
+        </section>
+  </main>
+
+
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Team SpeX ~</h3>
+  </footer>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>
