@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App-speX</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../public/favicon_io/site.webmanifest" />
+    <title>SpeX Website</title>
+    <link rel="stylesheet" href="./stylefornews.css" />
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <h1>Latest News</h1>
+      <button id="toggleModeBtn" class="btn-toggle">
+        <span id="sunIcon" class="sun-icon">&#9728;</span>
+      </button>
+      <div id="loadingMessage" class="loading-message">Loading news...</div>
+      <div id="newsContainer"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

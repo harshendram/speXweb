@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  font-family: 'General Sans', sans-serif;
+  font-family: "General Sans", sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
@@ -90,4 +90,32 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--clr-rose);
   outline: 1px solid var(--clr-rose);
+}
+
+.centered-button {
+  display: inline-block;
+  background-color: #d9534f; /* Red background */
+  color: white; /* White text */
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.centered-button:hover {
+  background-color: #c12d2a; /* Darker red on hover */
+}
+
+.centered-button:active {
+  background-color: #a02520; /* Even darker red on click */
+}
+
+/* Center the button horizontally and vertically */
+.centered-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
